@@ -1,2 +1,2 @@
 # Catalog-Indexing-Engine
-Efficient retrieval methods for fashion and grocery based catalogs 
+Efficient retrieval methods for fashion catalogs 
