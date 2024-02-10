@@ -14,7 +14,7 @@ with open('seller_list.pkl', 'wb') as f:
     pickle.dump(indexMappings.seller_list, f)
 
 locale.getpreferredencoding = lambda: "UTF-8"
-os.environ["REPLICATE_API_TOKEN"] = "r8_1Cqldwtqw5MyUh8fI22HNJfNp2VGBkm2lImnb"
+os.environ["REPLICATE_API_TOKEN"] = ""
 
 model = SentenceTransformer('all-mpnet-base-v2')
 
