@@ -1,15 +1,14 @@
 # Catalog Indexing Engine
 
-Efficient retrieval methods for fashion catalogs using a microservices-based architecture that supports both **structured** and **unstructured** search. :contentReference[oaicite:0]{index=0}
+Efficient retrieval methods for fashion catalogs using a microservices-based architecture that supports both **structured** and **unstructured** search. 
 
 ## What this repo contains
-- **Kafka Streaming/**: event-driven ingestion layer for catalog/product updates :contentReference[oaicite:1]{index=1}  
-- **Elastic Search/**: indexing + search infrastructure for low-latency retrieval :contentReference[oaicite:2]{index=2}  
-- **search_api/**: API service to query/search the catalog (structured + semantic style queries) :contentReference[oaicite:3]{index=3}  
-- **Product Relevancy/**: notebooks/experiments for ranking, relevancy tuning, evaluation :contentReference[oaicite:4]{index=4}  
-- **Data/**: datasets / sample data / utilities :contentReference[oaicite:5]{index=5}  
-- **KubeFiles/**: Kubernetes manifests / deployment configs :contentReference[oaicite:6]{index=6}  
-
+- **Kafka Streaming/**: event-driven ingestion layer for catalog/product updates
+- **Elastic Search/**: indexing + search infrastructure for low-latency retrieval 
+- **search_api/**: API service to query/search the catalog (structured + semantic style queries) 
+- **Product Relevancy/**: notebooks/experiments for ranking, relevancy tuning, evaluation
+- **Data/**: datasets / sample data / utilities 
+- **KubeFiles/**: Kubernetes manifests / deployment configs 
 ## High-level architecture
 1. **Catalog events** (creates/updates/deletes) flow into **Kafka**
 2. Consumers transform events into **Elasticsearch documents**
@@ -43,13 +42,13 @@ Efficient retrieval methods for fashion catalogs using a microservices-based arc
 - Kubernetes configs live in `KubeFiles/` for deploying:
   - Kafka consumers
   - Search API
-  - Supporting services (as applicable) :contentReference[oaicite:7]{index=7}
+  - Supporting services (as applicable) 
 
 ## Evaluation / Relevancy work
 - `Product Relevancy/` contains analysis and experiments for:
   - improving ranking quality
   - tuning retrieval strategies
-  - measuring precision/recall / offline metrics :contentReference[oaicite:8]{index=8}
+  - measuring precision/recall / offline metrics
 
 ## Contributing
 - Keep services loosely coupled (events > direct calls where possible)
