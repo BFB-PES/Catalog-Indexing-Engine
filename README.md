@@ -55,6 +55,4 @@ Efficient retrieval methods for fashion catalogs using a microservices-based arc
 - Add tests for any query/ranking logic changes
 - Document any new topics/indices and their schemas
 
-## License
-Add license details here (if/when applicable).
 
